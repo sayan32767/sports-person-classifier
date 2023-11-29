@@ -1,3 +1,4 @@
 opencv-python
 joblib
 PyWavelets
+opencv-python-headless
