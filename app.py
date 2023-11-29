@@ -43,6 +43,9 @@ def classify_image(uploaded_file_path):
 def copy_to_current_directory(uploaded_file):
     file_name = uploaded_file.name
 
+    if not os.path.exists(os.path.join(os.getcwd(), '.cache')):
+        os.mkdir(os.path.join(os.getcwd(), '.cache'))
+
     # Create a new file path in the current directory
     new_file_path = os.path.join(os.getcwd(), '.cache', file_name)
 
